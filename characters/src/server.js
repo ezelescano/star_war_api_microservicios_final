@@ -7,6 +7,6 @@ server.use(morgan('dev'));
 
 server.use(express.json());
 
-
+server.use('/characters', require('./routes'))
 
 module.exports = server;
