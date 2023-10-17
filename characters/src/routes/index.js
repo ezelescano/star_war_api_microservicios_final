@@ -1,14 +1,12 @@
 const { Router } = require('express');
+const handlers = require('../handlers');
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    console.log('Soy la ruta del getCharacters');
-});
+router.get('/', handlers.charactersHandlers);
 
-router.post('/', (req, res) => {
-    console.log('Soy la ruta del createCharacters');
-});
+
+router.post('/', handlers.createCharacterHandler);
 
 router.delete('/delete/:id', (req, res) => {
     console.log('Soy la ruta que borra');
@@ -17,3 +15,5 @@ router.delete('/delete/:id', (req, res) => {
 router.put('/update/:id', (req, res) => {
     console.log('Soy la ruta que actualiza');
 });
+
+module.exports = router;
