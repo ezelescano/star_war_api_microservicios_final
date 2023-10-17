@@ -1,4 +1,4 @@
 
 module.exports = async (req, res) => {
-    res.status(200).send('soy el createCharacter');
+    res.status(200).send('NIY: soy el createCharacter');
 }
