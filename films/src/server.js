@@ -7,4 +7,6 @@ server.use(morgan('dev'));
 
 server.use(express.json());
 
+server.use('/films', require('./routes'));
+
 module.exports = server;
