@@ -3,5 +3,5 @@ const server = require('./src/server');
 const PORT = 8002;
 
 server.listen(PORT, () =>{
-    console.log(`Server Characters listening on port ${PORT}`)
+    console.log(`Server Films listening on port ${PORT}`)
 })
