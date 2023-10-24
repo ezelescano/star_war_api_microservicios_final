@@ -1,3 +1,5 @@
+const PLanets = require('../data');
 module.exports = async (req, res) => {
-    res.status(200).send('NIY: esta ruta trae todos los planetas');
+    const planets = await PLanets.list()
+    res.status(200).json(planets);
 }

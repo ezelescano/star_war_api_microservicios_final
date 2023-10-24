@@ -1,3 +1,5 @@
+const Characters = require('../data')
 module.exports =    async (req, res) => {
-    res.status(200).send('NIY: soy el getcharacters')
+   const characters = await Characters.list();//utiliza characters como si fuera un modelo mas
+    res.status(200).json(characters);
 }

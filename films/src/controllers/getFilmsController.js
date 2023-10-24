@@ -1,3 +1,6 @@
+const Films = require('../data');
+
 module.exports = async (req, res) => {
-    res.status(200).send('NIY: esta ruta trae los films');
+    const films = await Films.list();
+    res.status(200).json(films);
 }
