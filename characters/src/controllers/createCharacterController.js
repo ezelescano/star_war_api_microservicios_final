@@ -1,3 +1,5 @@
+const Character = require('../data');
+
 
 
 module.exports = async (req, res) => {

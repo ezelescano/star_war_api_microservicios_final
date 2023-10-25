@@ -1,6 +1,8 @@
+const { catchedAsync } = require('../utils')
+
 module.exports = {
-    getCharactersController : require('./getCharactersController'), 
-    createCharacterController : require('./createCharacterController'),
-    deleteCharacterController : require('./deleteCharacterController'),
-    updateCharacterController : require('./updateCharacterController')
+    getCharactersController: catchedAsync(require('./getCharactersController')),
+    createCharacterController: catchedAsync(require('./createCharacterController')),
+    deleteCharacterController: catchedAsync(require('./deleteCharacterController')),
+    updateCharacterController: catchedAsync(require('./updateCharacterController'))
 };
