@@ -3,4 +3,4 @@ module.exports = async (res, statusCode, data) => {
         error: false,
         data,
     });
-};
+;}
