@@ -7,8 +7,8 @@ const filmSchema = new Schema({
     director: String,
     producer: String,
     release_date: String,
-    characters: [{String, ref: 'Character'}],
-    planets: [{String, ref: 'Planet'}]
+    characters: [{type: String, ref: 'Character'}],
+    planets: [{type: String, ref: 'Planet'}]
 });
 
 module.exports= filmSchema;

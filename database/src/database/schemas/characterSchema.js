@@ -10,8 +10,8 @@ const characterSchema = new Schema({
     eye_color: String,
     birth_year: String,
     gender: String,
-    homeworld: [{String, ref:'Planet'}],
-    films: [{String, ref: 'Film'}]
+    homeworld: [{type: String, ref:'Planet'}],
+    films: [{type: String, ref: 'Film'}]
 });
 
 module.exports = characterSchema;
