@@ -10,3 +10,7 @@ const Film = conn.model('Film', require('./schemas/filmSchema'));
 const Planet = conn.model('Planet', require('./schemas/planetSchema'));
 
 Character.find().then((res) => console.log(res));
+
+module.exports ={
+    
+}
