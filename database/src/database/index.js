@@ -5,7 +5,7 @@ const conn = mongoose.createConnection(MONGO_URI);
 
 
 
-module.exports ={
+module.exports = store ={
    
     Character: conn.model('Character', require('./schemas/characterSchema')),
 
