@@ -12,7 +12,6 @@ router.get('/:model', validationModel, async (req, res)=> {
 
 router.get('/:model/:id', validationModel, async (req, res)=>{
     const {model, id} = req.params;
-    console.log('soy model y id', model, id)
     const response = await store[model].get(id);
     res.status(200).json(response);
 }) 
