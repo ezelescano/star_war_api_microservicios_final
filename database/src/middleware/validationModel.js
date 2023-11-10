@@ -4,5 +4,7 @@ module.exports = (req, res, next) =>{
         return next();
     } else{
         throw Error('Invalid Model');
-    }
+    };
+
+
 }

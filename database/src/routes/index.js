@@ -10,6 +10,13 @@ router.get('/:model', validationModel, async (req, res)=> {
     res.status(200).json(response);
 });
 
+router.get('/:model/:id', validationModel, async (req, res)=>{
+    const {model, id} = req.params;
+    console.log('soy model y id', model, id)
+    const response = await store[model].get(id);
+    res.status(200).json(response);
+}) 
+
 
 
  module.exports= router;

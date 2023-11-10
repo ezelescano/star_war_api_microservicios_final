@@ -23,8 +23,8 @@ filmSchema.statics.get = async function(id){
     .populate('planets', ['_id', 'name']);
 }
 
-filmSchema.statics.insert= async function(planet){
-    return await this.create(planet);
+filmSchema.statics.insert= async function(film){
+    return await this.create(film);
 };
 
 module.exports= filmSchema;

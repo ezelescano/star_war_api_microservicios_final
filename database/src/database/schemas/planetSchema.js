@@ -26,8 +26,8 @@ planetSchema.statics.get = async function(id){
     .populate('films', ['_id', 'title']);
 }
 
-planetSchema.statics.insert= async function(film){
-    return await this.create(film);
+planetSchema.statics.insert= async function(planet){
+    return await this.create(planet);
 };
 
 
